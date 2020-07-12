@@ -16,7 +16,6 @@ class Body extends StatelessWidget {
           children: <Widget>[
             RichText(
               text: TextSpan(
-
                 children: [
                   TextSpan(
                     text: "Shiberian",

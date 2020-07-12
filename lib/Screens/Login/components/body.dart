@@ -3,6 +3,7 @@ import 'package:siberian_husky_app/components/rounded_button.dart';
 import 'package:siberian_husky_app/Screens/Signup/components/background.dart';
 import 'package:siberian_husky_app/components/rounded_input_field.dart';
 import 'package:siberian_husky_app/components/rounded_password_field.dart';
+import 'package:siberian_husky_app/Screens/Husky/huskies_screen.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -29,7 +30,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return HuskiesScreen();
+                      },
+                    ),
+                );
+              },
             ),
           ],
         ),
